@@ -116,4 +116,5 @@ Date: Mon, 29 Feb 2016 19:55:15 GMT
 ``` 
 ---
 
+> Use [this baseline code](https://github.com/sithu/cmpe273-sp16/tree/master/assignment1) to start
 
