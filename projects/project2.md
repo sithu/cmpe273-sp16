@@ -1,6 +1,6 @@
 ## 2. Pi  Cloud
 
-Pi Cloud is a Raspberry Pi based PaaS service that can add or remove the nodes in real-time without restarting the server.
+Pi Cloud is a Raspberry Pi based [PaaS](http://deis.io/overview/) service that can add or remove the nodes in real-time without restarting the server.
 
 ### Requirement
 
@@ -16,6 +16,11 @@ The whole project is to build this main controller which is the brain of the Pi 
 3. Launch the application
 4. Add the new route to the routing table.
 5. Route the HTTP traffic to the node based on the URL path (E.g. http://x.y.z/app1 -> http://1.2.3.4:5000)
+
+
+#### Useful Tools/Frameworks 
+
+* [Python Fabric for accessing nodes from the main controller node](http://www.fabfile.org/)
 
 
 
