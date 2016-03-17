@@ -6,7 +6,7 @@ In this assignment, you need to persist the personal preference data that you ge
 ### Requirement
 
 #### Data Persistence
-* You will be storing the personal reference data into [EJDB](http://ejdb.org/doc/snippets.html#go). All the CRUD APIs will now save and fetch data from EJDB.
+* All the CRUD APIs will be now storing and retrieving data from [EJDB](http://ejdb.org/doc/snippets.html#go).
 
 #### Configuration
 
