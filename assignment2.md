@@ -18,6 +18,9 @@ In this assignment, you need to persist the personal preference data that you ge
 file_name = "app.db"
 
 port_num = 3000
+
+[replication]
+replica = [ http://0.0.0.0:3001,http://0.0.0.0:3002,http://0.0.0.0:3003 ]
 ```
 
 > [How to toml?](https://github.com/naoina/toml/tree/master/_example) 
