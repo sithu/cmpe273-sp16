@@ -2,6 +2,9 @@
 ```sh
 go get github.com/drone/routes
 
+# Optional - you don't really need this!
+brew install ejdb
+
 # For other OSes, see @http://wiki.bazaar.canonical.com/Download
 brew install bzr
 
