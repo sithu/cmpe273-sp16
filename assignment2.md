@@ -53,3 +53,13 @@ replica = [ "http://0.0.0.0:3001" ]
  * Use app1.toml for server 1 and app2.toml for another one.
  * Your code must work for any number of replica.
  
+#### EJDB Alternative
+
+If you cannot install EJDB for whatever reason, you are allowed to use SQLite3 as database. You don't need to install anything for SQLite other than just this go-get:
+
+```sh
+go get github.com/mattn/go-sqlite3
+```
+
+You can find more examples at [Sqlite's github](https://github.com/mattn/go-sqlite3) in addition to this [sample code](https://github.com/sithu/cmpe273-sp16/blob/master/assignment2/app_sqlite3.go).
+ 
