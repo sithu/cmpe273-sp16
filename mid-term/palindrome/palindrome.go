@@ -6,5 +6,5 @@ func reverse(input string) string {
 }
 
 func Is_palindrome(s string) bool {
-	return s == reverse(s)
+	return reverse(reverse(s)) == reverse(s)
 }
