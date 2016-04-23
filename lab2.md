@@ -82,11 +82,11 @@ Implement a consistent hashing client to shard data into replica of datastore.
 go run sever.go 3001-3005
 ```
 
-2. Run the CH client and pass the data to be sharded as an argument.
+2. Run the CH client and pass the data to be sharded across the servers running on localhost's ports(3001-3005).
 
 ```sh
 # {key}->{value}
-go run client.go 1->A,2->B,3->C,4->D,5->E
+go run client.go 3001-3005 1->A,2->B,3->C,4->D,5->E
 ```
 
 3.  Check the result.
