@@ -55,18 +55,16 @@ Date: Mon, 29 Feb 2016 19:55:15 GMT
 ....
 ``` 
 ```json
-{
-    [   
-        {
-            "key": 123,
-            "value" : "xxxxxx"
-        },
-        {
-            "key": 456,
-            "value" : "xxxxxx"
-        },
-    ]   
-}
+[   
+    {
+        "key": 123,
+        "value" : "xxxxxx"
+    },
+    {
+        "key": 456,
+        "value" : "xxxxxx"
+    }
+]   
 ``` 
 
 ### Client side
