@@ -26,7 +26,7 @@ go run sever.go 3001-3005
 
 ```sh
 # {key}->{value}
-go run client.go 3001-3005 1->A,2->B,3->C,4->D,5->E
+go run client.go 3001-3005 "1->A,2->B,3->C,4->D,5->E"
 ```
 
 * [3] Check the result.
