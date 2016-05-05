@@ -5,6 +5,7 @@ In this assignment, you will be building an off-line HTTP scheduler that retriev
 ### Requirement
  
 The HTTP scheduler will do the following tasks:
+
 1. Read requests from input.bson.
 2. Invoke a Http call to request->url.
 3. If success, then make HTTP POST call to the "callback_webhook_url".
@@ -46,35 +47,39 @@ The HTTP scheduler will do the following tasks:
 {
     "job": {
         "status": "COMPLETED",
-        "num_retries": 0,
-        "callback_http_response_code": 200 
+        "num_retries": 0
     },
-    "id": 1462406556741,
-    "success_http_response_code": 200,
-    "max_retries": 3,
-    "callback_webhook_url": "http://requestb.in/vh61ztvh",
-    "request": {
-        "url": "http://requestb.in/vh61ztvh",
-        "method": "POST",
-        "http_headers" : {
-            "Content-Type": "application/json",
-            "Accept": "application/json"      
-        },
-        "body" : {
-            "foo": "bar"
+    "input": {
+        "id": 1462406556741,
+        "success_http_response_code": 200,
+        "max_retries": 3,
+        "callback_webhook_url": "http://requestb.in/vh61ztvh",
+        "request": {
+            "url": "http://requestb.in/vh61ztvh",
+            "method": "POST",
+            "http_headers" : {
+                "Content-Type": "application/json",
+                "Accept": "application/json"      
+            },
+            "body" : {
+                "foo": "bar"
+            }
         }
     },
-    "response": {
-        "http_response_code": 200,
-        "http_headers": {
-            "Date" : "Thu, 05 May 2016 00:08:56 GMT",
-            "Content-Type" : "application/json; charset=utf-8",
-            "Content-Length" : 2  
-        },
-        "body" : {
-           "hello": "world"   
+    "output": {
+        "response": {
+            "http_response_code": 200,
+            "http_headers": {
+                "Date" : "Thu, 05 May 2016 00:08:56 GMT",
+                "Content-Type" : "application/json; charset=utf-8",
+                "Content-Length" : 2  
+            },
+            "body" : {
+            "hello": "world"   
+            }
         }
-    }
+    },
+    "callback_response_code": 200
 }
 ```
 
